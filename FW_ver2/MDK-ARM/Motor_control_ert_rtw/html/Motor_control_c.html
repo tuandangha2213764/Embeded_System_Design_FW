@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="./js/coder_app.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="./rtwreport_utils.js"></script>
+<script type="text/javascript" src="./rtwannotate.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/coder_app.css"/>
+</head>
+<body onload="srcFileOnload();">
+<pre id="code">
+<table class="code" id="codeTbl">
+<tr name="1" id="1">
+<td><a id="l1" class='ln'>1</a></td><td><span class="ct">/*</span></td></tr>
+<tr name="2" id="2">
+<td><a id="l2" class='ln'>2</a></td><td><span class="ct"> * File: Motor_control.c</span></td></tr>
+<tr name="3" id="3">
+<td><a id="l3" class='ln'>3</a></td><td><span class="ct"> *</span></td></tr>
+<tr name="4" id="4">
+<td><a id="l4" class='ln'>4</a></td><td><span class="ct"> * Code generated for Simulink model 'Motor_control'.</span></td></tr>
+<tr name="5" id="5">
+<td><a id="l5" class='ln'>5</a></td><td><span class="ct"> *</span></td></tr>
+<tr name="6" id="6">
+<td><a id="l6" class='ln'>6</a></td><td><span class="ct"> * Model version                  : 1.45</span></td></tr>
+<tr name="7" id="7">
+<td><a id="l7" class='ln'>7</a></td><td><span class="ct"> * Simulink Coder version         : 8.13 (R2017b) 24-Jul-2017</span></td></tr>
+<tr name="8" id="8">
+<td><a id="l8" class='ln'>8</a></td><td><span class="ct"> * C/C++ source code generated on : Wed May 21 23:19:37 2025</span></td></tr>
+<tr name="9" id="9">
+<td><a id="l9" class='ln'>9</a></td><td><span class="ct"> *</span></td></tr>
+<tr name="10" id="10">
+<td><a id="l10" class='ln'>10</a></td><td><span class="ct"> * Target selection: ert.tlc</span></td></tr>
+<tr name="11" id="11">
+<td><a id="l11" class='ln'>11</a></td><td><span class="ct"> * Embedded hardware selection: Intel-&gt;x86-64 (Windows64)</span></td></tr>
+<tr name="12" id="12">
+<td><a id="l12" class='ln'>12</a></td><td><span class="ct"> * Code generation objectives: Unspecified</span></td></tr>
+<tr name="13" id="13">
+<td><a id="l13" class='ln'>13</a></td><td><span class="ct"> * Validation result: Not run</span></td></tr>
+<tr name="14" id="14">
+<td><a id="l14" class='ln'>14</a></td><td><span class="ct"> */</span></td></tr>
+<tr name="15" id="15">
+<td><a id="l15" class='ln'>15</a></td><td></td></tr>
+<tr name="16" id="16">
+<td><a id="l16" class='ln'>16</a></td><td><span class="pp">#include "Motor_control.h"</span></td></tr>
+<tr name="17" id="17">
+<td><a id="l17" class='ln'>17</a></td><td></td></tr>
+<tr name="18" id="18">
+<td><a id="l18" class='ln'>18</a></td><td><span class="ct">/* Exported block signals */</span></td></tr>
+<tr name="19" id="19">
+<td><a id="l19" class='ln'>19</a></td><td><a id="19c1" class="tk">real_T</a> <a id="19c8" class="tk">current_speed</a>;                  <span class="ct">/* '<a class="ct blk" blk_line="19">&lt;Root&gt;/current_speed</a>' */</span></td></tr>
+<tr name="20" id="20">
+<td><a id="l20" class='ln'>20</a></td><td><a id="20c1" class="tk">real_T</a> <a id="20c8" class="tk">set_point</a>;                      <span class="ct">/* '<a class="ct blk" blk_line="20">&lt;Root&gt;/Set_point </a>' */</span></td></tr>
+<tr name="21" id="21">
+<td><a id="l21" class='ln'>21</a></td><td><a id="21c1" class="tk">real_T</a> <a id="21c8" class="tk">set_point_mras</a>;                 <span class="ct">/* '<a class="ct blk" blk_line="21">&lt;Root&gt;/In1</a>' */</span></td></tr>
+<tr name="22" id="22">
+<td><a id="l22" class='ln'>22</a></td><td><a id="22c1" class="tk">real_T</a> <a id="22c8" class="tk">current_speed_PImras</a>;           <span class="ct">/* '<a class="ct blk" blk_line="22">&lt;Root&gt;/In2</a>' */</span></td></tr>
+<tr name="23" id="23">
+<td><a id="l23" class='ln'>23</a></td><td><a id="23c1" class="tk">real_T</a> <a id="23c8" class="tk">error</a>;                          <span class="ct">/* '<a class="ct blk" blk_line="23">&lt;Root&gt;/Sum</a>' */</span></td></tr>
+<tr name="24" id="24">
+<td><a id="l24" class='ln'>24</a></td><td><a id="24c1" class="tk">real_T</a> <a id="24c8" class="tk">signal_control</a>;                 <span class="ct">/* '<a class="ct blk" blk_line="24">&lt;Root&gt;/Saturation</a>' */</span></td></tr>
+<tr name="25" id="25">
+<td><a id="l25" class='ln'>25</a></td><td><a id="25c1" class="tk">real_T</a> <a id="25c8" class="tk">set_point_sine</a>;                 <span class="ct">/* '<a class="ct blk" blk_line="25">&lt;Root&gt;/Sine Wave</a>' */</span></td></tr>
+<tr name="26" id="26">
+<td><a id="l26" class='ln'>26</a></td><td><a id="26c1" class="tk">real_T</a> <a id="26c8" class="tk">signal_controlPImras</a>;           <span class="ct">/* '<a class="ct blk" blk_line="26">&lt;Root&gt;/Saturation2</a>' */</span></td></tr>
+<tr name="27" id="27">
+<td><a id="l27" class='ln'>27</a></td><td><a id="27c1" class="tk">real_T</a> <a id="27c8" class="tk">current_speed_model</a>;            <span class="ct">/* '<a class="ct blk" blk_line="27">&lt;Root&gt;/Reference model</a>' */</span></td></tr>
+<tr name="28" id="28">
+<td><a id="l28" class='ln'>28</a></td><td><a id="28c1" class="tk">real_T</a> <a id="28c8" class="tk">error_PImras</a>;                   <span class="ct">/* '<a class="ct blk" blk_line="28">&lt;Root&gt;/Sum4</a>' */</span></td></tr>
+<tr name="29" id="29">
+<td><a id="l29" class='ln'>29</a></td><td></td></tr>
+<tr name="30" id="30">
+<td><a id="l30" class='ln'>30</a></td><td><span class="ct">/* Exported block parameters */</span></td></tr>
+<tr name="31" id="31">
+<td><a id="l31" class='ln'>31</a></td><td><a id="31c1" class="tk">real_T</a> <a id="31c8" class="tk">gi</a> = 0.0;                       <span class="ct">/* Variable: gi</span></td></tr>
+<tr name="32" id="32">
+<td><a id="l32" class='ln'>32</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="32">&lt;Root&gt;/gamma3</a>'</span></td></tr>
+<tr name="33" id="33">
+<td><a id="l33" class='ln'>33</a></td><td><span class="ct">                                        */</span></td></tr>
+<tr name="34" id="34">
+<td><a id="l34" class='ln'>34</a></td><td><a id="34c1" class="tk">real_T</a> <a id="34c8" class="tk">gp</a> = 0.0;                       <span class="ct">/* Variable: gp</span></td></tr>
+<tr name="35" id="35">
+<td><a id="l35" class='ln'>35</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="35">&lt;Root&gt;/gamma2</a>'</span></td></tr>
+<tr name="36" id="36">
+<td><a id="l36" class='ln'>36</a></td><td><span class="ct">                                        */</span></td></tr>
+<tr name="37" id="37">
+<td><a id="l37" class='ln'>37</a></td><td><a id="37c1" class="tk">real_T</a> <a id="37c8" class="tk">ki</a> = 0.0;                       <span class="ct">/* Variable: ki</span></td></tr>
+<tr name="38" id="38">
+<td><a id="l38" class='ln'>38</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="38">&lt;S1&gt;/Integral Gain</a>'</span></td></tr>
+<tr name="39" id="39">
+<td><a id="l39" class='ln'>39</a></td><td><span class="ct">                                        */</span></td></tr>
+<tr name="40" id="40">
+<td><a id="l40" class='ln'>40</a></td><td><a id="40c1" class="tk">real_T</a> <a id="40c8" class="tk">kp</a> = 0.0;                       <span class="ct">/* Variable: kp</span></td></tr>
+<tr name="41" id="41">
+<td><a id="l41" class='ln'>41</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="41">&lt;S1&gt;/Proportional Gain</a>'</span></td></tr>
+<tr name="42" id="42">
+<td><a id="l42" class='ln'>42</a></td><td><span class="ct">                                        */</span></td></tr>
+<tr name="43" id="43">
+<td><a id="l43" class='ln'>43</a></td><td></td></tr>
+<tr name="44" id="44">
+<td><a id="l44" class='ln'>44</a></td><td><span class="ct">/* Block signals and states (auto storage) */</span></td></tr>
+<tr name="45" id="45">
+<td><a id="l45" class='ln'>45</a></td><td><a id="45c1" class="tk">DW</a> <a id="45c4" class="tk">rtDW</a>;</td></tr>
+<tr name="46" id="46">
+<td><a id="l46" class='ln'>46</a></td><td></td></tr>
+<tr name="47" id="47">
+<td><a id="l47" class='ln'>47</a></td><td><span class="ct">/* Model step function */</span></td></tr>
+<tr name="48" id="48">
+<td><a id="l48" class='ln'>48</a></td><td><span class="kw">void</span> <a id="48c6" class="tk">Motor_control_step</a>(<span class="kw">void</span>)</td></tr>
+<tr name="49" id="49">
+<td><a id="l49" class='ln'>49</a></td><td><span class="br">{</span></td></tr>
+<tr name="50" id="50">
+<td><a id="l50" class='ln'>50</a></td><td>  <a id="50c3" class="tk">real_T</a> <a id="50c10" class="tk">rtb_DiscreteTransferFcn3</a>;</td></tr>
+<tr name="51" id="51">
+<td><a id="l51" class='ln'>51</a></td><td>  <a id="51c3" class="tk">real_T</a> <a id="51c10" class="tk">ucy</a>;</td></tr>
+<tr name="52" id="52">
+<td><a id="l52" class='ln'>52</a></td><td></td></tr>
+<tr name="53" id="53">
+<td><a id="l53" class='ln'>53</a></td><td>  <span class="ct">/* Sum: '<a class="ct blk" blk_line="53">&lt;Root&gt;/Sum</a>' incorporates:</span></td></tr>
+<tr name="54" id="54">
+<td><a id="l54" class='ln'>54</a></td><td><span class="ct">   *  Inport: '<a class="ct blk" blk_line="54">&lt;Root&gt;/Set_point </a>'</span></td></tr>
+<tr name="55" id="55">
+<td><a id="l55" class='ln'>55</a></td><td><span class="ct">   *  Inport: '<a class="ct blk" blk_line="55">&lt;Root&gt;/current_speed</a>'</span></td></tr>
+<tr name="56" id="56">
+<td><a id="l56" class='ln'>56</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="57" id="57">
+<td><a id="l57" class='ln'>57</a></td><td>  <a id="57c3" class="tk">error</a> = <a id="57c11" class="tk">set_point</a> <a id="57c21" class="tk">-</a> <a id="57c23" class="tk">current_speed</a>;</td></tr>
+<tr name="58" id="58">
+<td><a id="l58" class='ln'>58</a></td><td></td></tr>
+<tr name="59" id="59">
+<td><a id="l59" class='ln'>59</a></td><td>  <span class="ct">/* Sum: '<a class="ct blk" blk_line="59">&lt;S1&gt;/Sum</a>' incorporates:</span></td></tr>
+<tr name="60" id="60">
+<td><a id="l60" class='ln'>60</a></td><td><span class="ct">   *  DiscreteIntegrator: '<a class="ct blk" blk_line="60">&lt;S1&gt;/Integrator</a>'</span></td></tr>
+<tr name="61" id="61">
+<td><a id="l61" class='ln'>61</a></td><td><span class="ct">   *  Gain: '<a class="ct blk" blk_line="61">&lt;S1&gt;/Proportional Gain</a>'</span></td></tr>
+<tr name="62" id="62">
+<td><a id="l62" class='ln'>62</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="63" id="63">
+<td><a id="l63" class='ln'>63</a></td><td>  <a id="63c3" class="tk">rtb_DiscreteTransferFcn3</a> = <a id="63c30" class="tk">kp</a> <a id="63c33" class="tk">*</a> <a id="63c35" class="tk">error</a> <a id="63c41" class="tk">+</a> <a id="63c43" class="tk">rtDW</a>.<a id="63c48" class="tk">Integrator_DSTATE</a>;</td></tr>
+<tr name="64" id="64">
+<td><a id="l64" class='ln'>64</a></td><td></td></tr>
+<tr name="65" id="65">
+<td><a id="l65" class='ln'>65</a></td><td>  <span class="ct">/* Saturate: '<a class="ct blk" blk_line="65">&lt;Root&gt;/Saturation</a>' */</span></td></tr>
+<tr name="66" id="66">
+<td><a id="l66" class='ln'>66</a></td><td>  <span class="kw">if</span> (<a id="66c7" class="tk">rtb_DiscreteTransferFcn3</a> <a id="66c32" class="tk">&gt;</a> 100.0) <span class="br">{</span></td></tr>
+<tr name="67" id="67">
+<td><a id="l67" class='ln'>67</a></td><td>    <a id="67c5" class="tk">signal_control</a> = 100.0;</td></tr>
+<tr name="68" id="68">
+<td><a id="l68" class='ln'>68</a></td><td>  <span class="br">}</span> <span class="kw">else</span> <span class="kw">if</span> (<a id="68c14" class="tk">rtb_DiscreteTransferFcn3</a> <a id="68c39" class="tk">&lt;</a> 0.0) <span class="br">{</span></td></tr>
+<tr name="69" id="69">
+<td><a id="l69" class='ln'>69</a></td><td>    <a id="69c5" class="tk">signal_control</a> = 0.0;</td></tr>
+<tr name="70" id="70">
+<td><a id="l70" class='ln'>70</a></td><td>  <span class="br">}</span> <span class="kw">else</span> <span class="br">{</span></td></tr>
+<tr name="71" id="71">
+<td><a id="l71" class='ln'>71</a></td><td>    <a id="71c5" class="tk">signal_control</a> = <a id="71c22" class="tk">rtb_DiscreteTransferFcn3</a>;</td></tr>
+<tr name="72" id="72">
+<td><a id="l72" class='ln'>72</a></td><td>  <span class="br">}</span></td></tr>
+<tr name="73" id="73">
+<td><a id="l73" class='ln'>73</a></td><td></td></tr>
+<tr name="74" id="74">
+<td><a id="l74" class='ln'>74</a></td><td>  <span class="ct">/* End of Saturate: '<a class="ct blk" blk_line="74">&lt;Root&gt;/Saturation</a>' */</span></td></tr>
+<tr name="75" id="75">
+<td><a id="l75" class='ln'>75</a></td><td></td></tr>
+<tr name="76" id="76">
+<td><a id="l76" class='ln'>76</a></td><td>  <span class="ct">/* Sin: '<a class="ct blk" blk_line="76">&lt;Root&gt;/Sine Wave</a>' */</span></td></tr>
+<tr name="77" id="77">
+<td><a id="l77" class='ln'>77</a></td><td>  <a id="77c3" class="tk">set_point_sine</a> = <a id="77c20" class="tk">sin</a>((<a id="77c25" class="tk">real_T</a>)<a id="77c32" class="tk">rtDW</a>.<a id="77c37" class="tk">counter</a> <a id="77c45" class="tk">*</a> 2.0 <a id="77c51" class="tk">*</a> 3.1415926535897931 <a id="77c72" class="tk">/</a> 9999.0)</td></tr>
+<tr name="78" id="78">
+<td><a id="l78" class='ln'>78</a></td><td>    <a id="78c5" class="tk">*</a> 100.0 <a id="78c13" class="tk">+</a> 150.0;</td></tr>
+<tr name="79" id="79">
+<td><a id="l79" class='ln'>79</a></td><td></td></tr>
+<tr name="80" id="80">
+<td><a id="l80" class='ln'>80</a></td><td>  <span class="ct">/* Sum: '<a class="ct blk" blk_line="80">&lt;Root&gt;/Sum6</a>' incorporates:</span></td></tr>
+<tr name="81" id="81">
+<td><a id="l81" class='ln'>81</a></td><td><span class="ct">   *  Inport: '<a class="ct blk" blk_line="81">&lt;Root&gt;/In1</a>'</span></td></tr>
+<tr name="82" id="82">
+<td><a id="l82" class='ln'>82</a></td><td><span class="ct">   *  Inport: '<a class="ct blk" blk_line="82">&lt;Root&gt;/In2</a>'</span></td></tr>
+<tr name="83" id="83">
+<td><a id="l83" class='ln'>83</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="84" id="84">
+<td><a id="l84" class='ln'>84</a></td><td>  <a id="84c3" class="tk">ucy</a> = <a id="84c9" class="tk">set_point_mras</a> <a id="84c24" class="tk">-</a> <a id="84c26" class="tk">current_speed_PImras</a>;</td></tr>
+<tr name="85" id="85">
+<td><a id="l85" class='ln'>85</a></td><td></td></tr>
+<tr name="86" id="86">
+<td><a id="l86" class='ln'>86</a></td><td>  <span class="ct">/* Sum: '<a class="ct blk" blk_line="86">&lt;Root&gt;/Sum5</a>' incorporates:</span></td></tr>
+<tr name="87" id="87">
+<td><a id="l87" class='ln'>87</a></td><td><span class="ct">   *  DiscreteTransferFcn: '<a class="ct blk" blk_line="87">&lt;Root&gt;/Discrete Transfer Fcn5</a>'</span></td></tr>
+<tr name="88" id="88">
+<td><a id="l88" class='ln'>88</a></td><td><span class="ct">   *  DiscreteTransferFcn: '<a class="ct blk" blk_line="88">&lt;Root&gt;/Discrete Transfer Fcn6</a>'</span></td></tr>
+<tr name="89" id="89">
+<td><a id="l89" class='ln'>89</a></td><td><span class="ct">   *  DiscreteTransferFcn: '<a class="ct blk" blk_line="89">&lt;Root&gt;/Discrete Transfer Fcn7</a>'</span></td></tr>
+<tr name="90" id="90">
+<td><a id="l90" class='ln'>90</a></td><td><span class="ct">   *  Gain: '<a class="ct blk" blk_line="90">&lt;Root&gt;/gamma2</a>'</span></td></tr>
+<tr name="91" id="91">
+<td><a id="l91" class='ln'>91</a></td><td><span class="ct">   *  Gain: '<a class="ct blk" blk_line="91">&lt;Root&gt;/gamma3</a>'</span></td></tr>
+<tr name="92" id="92">
+<td><a id="l92" class='ln'>92</a></td><td><span class="ct">   *  Product: '<a class="ct blk" blk_line="92">&lt;Root&gt;/Product</a>'</span></td></tr>
+<tr name="93" id="93">
+<td><a id="l93" class='ln'>93</a></td><td><span class="ct">   *  Product: '<a class="ct blk" blk_line="93">&lt;Root&gt;/Product5</a>'</span></td></tr>
+<tr name="94" id="94">
+<td><a id="l94" class='ln'>94</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="95" id="95">
+<td><a id="l95" class='ln'>95</a></td><td>  <a id="95c3" class="tk">rtb_DiscreteTransferFcn3</a> = 0.1 <a id="95c34" class="tk">*</a> <a id="95c36" class="tk">rtDW</a>.<a id="95c41" class="tk">DiscreteTransferFcn7_states</a> <a id="95c69" class="tk">*</a> <a id="95c71" class="tk">gp</a> <a id="95c74" class="tk">*</a> <a id="95c76" class="tk">ucy</a> <a id="95c80" class="tk">+</a></td></tr>
+<tr name="96" id="96">
+<td><a id="l96" class='ln'>96</a></td><td>    0.1 <a id="96c9" class="tk">*</a> <a id="96c11" class="tk">rtDW</a>.<a id="96c16" class="tk">DiscreteTransferFcn6_states</a> <a id="96c44" class="tk">*</a> <a id="96c46" class="tk">gi</a> <a id="96c49" class="tk">*</a> (0.1 <a id="96c56" class="tk">*</a></td></tr>
+<tr name="97" id="97">
+<td><a id="l97" class='ln'>97</a></td><td>    <a id="97c5" class="tk">rtDW</a>.<a id="97c10" class="tk">DiscreteTransferFcn5_states</a>);</td></tr>
+<tr name="98" id="98">
+<td><a id="l98" class='ln'>98</a></td><td></td></tr>
+<tr name="99" id="99">
+<td><a id="l99" class='ln'>99</a></td><td>  <span class="ct">/* Saturate: '<a class="ct blk" blk_line="99">&lt;Root&gt;/Saturation2</a>' */</span></td></tr>
+<tr name="100" id="100">
+<td><a id="l100" class='ln'>100</a></td><td>  <span class="kw">if</span> (<a id="100c7" class="tk">rtb_DiscreteTransferFcn3</a> <a id="100c32" class="tk">&gt;</a> 100.0) <span class="br">{</span></td></tr>
+<tr name="101" id="101">
+<td><a id="l101" class='ln'>101</a></td><td>    <a id="101c5" class="tk">signal_controlPImras</a> = 100.0;</td></tr>
+<tr name="102" id="102">
+<td><a id="l102" class='ln'>102</a></td><td>  <span class="br">}</span> <span class="kw">else</span> <span class="kw">if</span> (<a id="102c14" class="tk">rtb_DiscreteTransferFcn3</a> <a id="102c39" class="tk">&lt;</a> 0.0) <span class="br">{</span></td></tr>
+<tr name="103" id="103">
+<td><a id="l103" class='ln'>103</a></td><td>    <a id="103c5" class="tk">signal_controlPImras</a> = 0.0;</td></tr>
+<tr name="104" id="104">
+<td><a id="l104" class='ln'>104</a></td><td>  <span class="br">}</span> <span class="kw">else</span> <span class="br">{</span></td></tr>
+<tr name="105" id="105">
+<td><a id="l105" class='ln'>105</a></td><td>    <a id="105c5" class="tk">signal_controlPImras</a> = <a id="105c28" class="tk">rtb_DiscreteTransferFcn3</a>;</td></tr>
+<tr name="106" id="106">
+<td><a id="l106" class='ln'>106</a></td><td>  <span class="br">}</span></td></tr>
+<tr name="107" id="107">
+<td><a id="l107" class='ln'>107</a></td><td></td></tr>
+<tr name="108" id="108">
+<td><a id="l108" class='ln'>108</a></td><td>  <span class="ct">/* End of Saturate: '<a class="ct blk" blk_line="108">&lt;Root&gt;/Saturation2</a>' */</span></td></tr>
+<tr name="109" id="109">
+<td><a id="l109" class='ln'>109</a></td><td></td></tr>
+<tr name="110" id="110">
+<td><a id="l110" class='ln'>110</a></td><td>  <span class="ct">/* DiscreteTransferFcn: '<a class="ct blk" blk_line="110">&lt;Root&gt;/Reference model</a>' */</span></td></tr>
+<tr name="111" id="111">
+<td><a id="l111" class='ln'>111</a></td><td>  <a id="111c3" class="tk">current_speed_model</a> = 0.044618379746072 <a id="111c43" class="tk">*</a> <a id="111c45" class="tk">rtDW</a>.<a id="111c50" class="tk">Referencemodel_states</a>[0] <a id="111c75" class="tk">+</a></td></tr>
+<tr name="112" id="112">
+<td><a id="l112" class='ln'>112</a></td><td>    0.0390238756969775 <a id="112c24" class="tk">*</a> <a id="112c26" class="tk">rtDW</a>.<a id="112c31" class="tk">Referencemodel_states</a>[1];</td></tr>
+<tr name="113" id="113">
+<td><a id="l113" class='ln'>113</a></td><td></td></tr>
+<tr name="114" id="114">
+<td><a id="l114" class='ln'>114</a></td><td>  <span class="ct">/* Sum: '<a class="ct blk" blk_line="114">&lt;Root&gt;/Sum4</a>' incorporates:</span></td></tr>
+<tr name="115" id="115">
+<td><a id="l115" class='ln'>115</a></td><td><span class="ct">   *  Inport: '<a class="ct blk" blk_line="115">&lt;Root&gt;/In2</a>'</span></td></tr>
+<tr name="116" id="116">
+<td><a id="l116" class='ln'>116</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="117" id="117">
+<td><a id="l117" class='ln'>117</a></td><td>  <a id="117c3" class="tk">error_PImras</a> = <a id="117c18" class="tk">current_speed_PImras</a> <a id="117c39" class="tk">-</a> <a id="117c41" class="tk">current_speed_model</a>;</td></tr>
+<tr name="118" id="118">
+<td><a id="l118" class='ln'>118</a></td><td></td></tr>
+<tr name="119" id="119">
+<td><a id="l119" class='ln'>119</a></td><td>  <span class="ct">/* Update for DiscreteIntegrator: '<a class="ct blk" blk_line="119">&lt;S1&gt;/Integrator</a>' incorporates:</span></td></tr>
+<tr name="120" id="120">
+<td><a id="l120" class='ln'>120</a></td><td><span class="ct">   *  Gain: '<a class="ct blk" blk_line="120">&lt;S1&gt;/Integral Gain</a>'</span></td></tr>
+<tr name="121" id="121">
+<td><a id="l121" class='ln'>121</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="122" id="122">
+<td><a id="l122" class='ln'>122</a></td><td>  <a id="122c3" class="tk">rtDW</a>.<a id="122c8" class="tk">Integrator_DSTATE</a> <a id="122c26" class="tk">+=</a> <a id="122c29" class="tk">ki</a> <a id="122c32" class="tk">*</a> <a id="122c34" class="tk">error</a> <a id="122c40" class="tk">*</a> 0.1;</td></tr>
+<tr name="123" id="123">
+<td><a id="l123" class='ln'>123</a></td><td></td></tr>
+<tr name="124" id="124">
+<td><a id="l124" class='ln'>124</a></td><td>  <span class="ct">/* Update for Sin: '<a class="ct blk" blk_line="124">&lt;Root&gt;/Sine Wave</a>' */</span></td></tr>
+<tr name="125" id="125">
+<td><a id="l125" class='ln'>125</a></td><td>  <a id="125c3" class="tk">rtDW</a>.<a id="125c8" class="tk">counter</a><a id="125c15" class="tk">++</a>;</td></tr>
+<tr name="126" id="126">
+<td><a id="l126" class='ln'>126</a></td><td>  <span class="kw">if</span> (<a id="126c7" class="tk">rtDW</a>.<a id="126c12" class="tk">counter</a> <a id="126c20" class="tk">==</a> 9999) <span class="br">{</span></td></tr>
+<tr name="127" id="127">
+<td><a id="l127" class='ln'>127</a></td><td>    <a id="127c5" class="tk">rtDW</a>.<a id="127c10" class="tk">counter</a> = 0;</td></tr>
+<tr name="128" id="128">
+<td><a id="l128" class='ln'>128</a></td><td>  <span class="br">}</span></td></tr>
+<tr name="129" id="129">
+<td><a id="l129" class='ln'>129</a></td><td></td></tr>
+<tr name="130" id="130">
+<td><a id="l130" class='ln'>130</a></td><td>  <span class="ct">/* End of Update for Sin: '<a class="ct blk" blk_line="130">&lt;Root&gt;/Sine Wave</a>' */</span></td></tr>
+<tr name="131" id="131">
+<td><a id="l131" class='ln'>131</a></td><td></td></tr>
+<tr name="132" id="132">
+<td><a id="l132" class='ln'>132</a></td><td>  <span class="ct">/* Update for DiscreteTransferFcn: '<a class="ct blk" blk_line="132">&lt;Root&gt;/Discrete Transfer Fcn7</a>' incorporates:</span></td></tr>
+<tr name="133" id="133">
+<td><a id="l133" class='ln'>133</a></td><td><span class="ct">   *  DiscreteTransferFcn: '<a class="ct blk" blk_line="133">&lt;Root&gt;/Discrete Transfer Fcn3</a>'</span></td></tr>
+<tr name="134" id="134">
+<td><a id="l134" class='ln'>134</a></td><td><span class="ct">   *  Product: '<a class="ct blk" blk_line="134">&lt;Root&gt;/Product4</a>'</span></td></tr>
+<tr name="135" id="135">
+<td><a id="l135" class='ln'>135</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="136" id="136">
+<td><a id="l136" class='ln'>136</a></td><td>  <a id="136c3" class="tk">rtDW</a>.<a id="136c8" class="tk">DiscreteTransferFcn7_states</a> = (<a id="136c39" class="tk">-</a>0.324771506321578 <a id="136c58" class="tk">*</a></td></tr>
+<tr name="137" id="137">
+<td><a id="l137" class='ln'>137</a></td><td>    <a id="137c5" class="tk">rtDW</a>.<a id="137c10" class="tk">DiscreteTransferFcn3_states</a>[0] <a id="137c41" class="tk">+</a> 0.324771506321578 <a id="137c61" class="tk">*</a></td></tr>
+<tr name="138" id="138">
+<td><a id="l138" class='ln'>138</a></td><td>    <a id="138c5" class="tk">rtDW</a>.<a id="138c10" class="tk">DiscreteTransferFcn3_states</a>[1]) <a id="138c42" class="tk">*</a> <a id="138c44" class="tk">error_PImras</a> <a id="138c57" class="tk">-</a></td></tr>
+<tr name="139" id="139">
+<td><a id="l139" class='ln'>139</a></td><td>    (<a id="139c6" class="tk">-</a><a id="139c7" class="tk">rtDW</a>.<a id="139c12" class="tk">DiscreteTransferFcn7_states</a>);</td></tr>
+<tr name="140" id="140">
+<td><a id="l140" class='ln'>140</a></td><td></td></tr>
+<tr name="141" id="141">
+<td><a id="l141" class='ln'>141</a></td><td>  <span class="ct">/* Update for DiscreteTransferFcn: '<a class="ct blk" blk_line="141">&lt;Root&gt;/Discrete Transfer Fcn6</a>' incorporates:</span></td></tr>
+<tr name="142" id="142">
+<td><a id="l142" class='ln'>142</a></td><td><span class="ct">   *  DiscreteTransferFcn: '<a class="ct blk" blk_line="142">&lt;Root&gt;/Discrete Transfer Fcn4</a>'</span></td></tr>
+<tr name="143" id="143">
+<td><a id="l143" class='ln'>143</a></td><td><span class="ct">   *  Product: '<a class="ct blk" blk_line="143">&lt;Root&gt;/Product3</a>'</span></td></tr>
+<tr name="144" id="144">
+<td><a id="l144" class='ln'>144</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="145" id="145">
+<td><a id="l145" class='ln'>145</a></td><td>  <a id="145c3" class="tk">rtDW</a>.<a id="145c8" class="tk">DiscreteTransferFcn6_states</a> = (<a id="145c39" class="tk">-</a>0.0174736729680554 <a id="145c59" class="tk">*</a></td></tr>
+<tr name="146" id="146">
+<td><a id="l146" class='ln'>146</a></td><td>    <a id="146c5" class="tk">rtDW</a>.<a id="146c10" class="tk">DiscreteTransferFcn4_states</a>[0] <a id="146c41" class="tk">+</a> <a id="146c43" class="tk">-</a>0.0152827253198288 <a id="146c63" class="tk">*</a></td></tr>
+<tr name="147" id="147">
+<td><a id="l147" class='ln'>147</a></td><td>    <a id="147c5" class="tk">rtDW</a>.<a id="147c10" class="tk">DiscreteTransferFcn4_states</a>[1]) <a id="147c42" class="tk">*</a> <a id="147c44" class="tk">error_PImras</a> <a id="147c57" class="tk">-</a></td></tr>
+<tr name="148" id="148">
+<td><a id="l148" class='ln'>148</a></td><td>    (<a id="148c6" class="tk">-</a><a id="148c7" class="tk">rtDW</a>.<a id="148c12" class="tk">DiscreteTransferFcn6_states</a>);</td></tr>
+<tr name="149" id="149">
+<td><a id="l149" class='ln'>149</a></td><td></td></tr>
+<tr name="150" id="150">
+<td><a id="l150" class='ln'>150</a></td><td>  <span class="ct">/* Update for DiscreteTransferFcn: '<a class="ct blk" blk_line="150">&lt;Root&gt;/Discrete Transfer Fcn5</a>' */</span></td></tr>
+<tr name="151" id="151">
+<td><a id="l151" class='ln'>151</a></td><td>  <a id="151c3" class="tk">rtDW</a>.<a id="151c8" class="tk">DiscreteTransferFcn5_states</a> = <a id="151c38" class="tk">ucy</a> <a id="151c42" class="tk">-</a> (<a id="151c45" class="tk">-</a><a id="151c46" class="tk">rtDW</a>.<a id="151c51" class="tk">DiscreteTransferFcn5_states</a>);</td></tr>
+<tr name="152" id="152">
+<td><a id="l152" class='ln'>152</a></td><td></td></tr>
+<tr name="153" id="153">
+<td><a id="l153" class='ln'>153</a></td><td>  <span class="ct">/* Update for DiscreteTransferFcn: '<a class="ct blk" blk_line="153">&lt;Root&gt;/Discrete Transfer Fcn3</a>' */</span></td></tr>
+<tr name="154" id="154">
+<td><a id="l154" class='ln'>154</a></td><td>  <a id="154c3" class="tk">rtb_DiscreteTransferFcn3</a> = (<a id="154c31" class="tk">ucy</a> <a id="154c35" class="tk">-</a> <a id="154c37" class="tk">-</a>1.58599173418628 <a id="154c55" class="tk">*</a></td></tr>
+<tr name="155" id="155">
+<td><a id="l155" class='ln'>155</a></td><td>    <a id="155c5" class="tk">rtDW</a>.<a id="155c10" class="tk">DiscreteTransferFcn3_states</a>[0]) <a id="155c42" class="tk">-</a> 0.669633989629328 <a id="155c62" class="tk">*</a></td></tr>
+<tr name="156" id="156">
+<td><a id="l156" class='ln'>156</a></td><td>    <a id="156c5" class="tk">rtDW</a>.<a id="156c10" class="tk">DiscreteTransferFcn3_states</a>[1];</td></tr>
+<tr name="157" id="157">
+<td><a id="l157" class='ln'>157</a></td><td>  <a id="157c3" class="tk">rtDW</a>.<a id="157c8" class="tk">DiscreteTransferFcn3_states</a>[1] = <a id="157c41" class="tk">rtDW</a>.<a id="157c46" class="tk">DiscreteTransferFcn3_states</a>[0];</td></tr>
+<tr name="158" id="158">
+<td><a id="l158" class='ln'>158</a></td><td>  <a id="158c3" class="tk">rtDW</a>.<a id="158c8" class="tk">DiscreteTransferFcn3_states</a>[0] = <a id="158c41" class="tk">rtb_DiscreteTransferFcn3</a>;</td></tr>
+<tr name="159" id="159">
+<td><a id="l159" class='ln'>159</a></td><td></td></tr>
+<tr name="160" id="160">
+<td><a id="l160" class='ln'>160</a></td><td>  <span class="ct">/* Update for DiscreteTransferFcn: '<a class="ct blk" blk_line="160">&lt;Root&gt;/Discrete Transfer Fcn4</a>' */</span></td></tr>
+<tr name="161" id="161">
+<td><a id="l161" class='ln'>161</a></td><td>  <a id="161c3" class="tk">rtb_DiscreteTransferFcn3</a> = (<a id="161c31" class="tk">ucy</a> <a id="161c35" class="tk">-</a> <a id="161c37" class="tk">-</a>1.58599173418628 <a id="161c55" class="tk">*</a></td></tr>
+<tr name="162" id="162">
+<td><a id="l162" class='ln'>162</a></td><td>    <a id="162c5" class="tk">rtDW</a>.<a id="162c10" class="tk">DiscreteTransferFcn4_states</a>[0]) <a id="162c42" class="tk">-</a> 0.669633989629328 <a id="162c62" class="tk">*</a></td></tr>
+<tr name="163" id="163">
+<td><a id="l163" class='ln'>163</a></td><td>    <a id="163c5" class="tk">rtDW</a>.<a id="163c10" class="tk">DiscreteTransferFcn4_states</a>[1];</td></tr>
+<tr name="164" id="164">
+<td><a id="l164" class='ln'>164</a></td><td>  <a id="164c3" class="tk">rtDW</a>.<a id="164c8" class="tk">DiscreteTransferFcn4_states</a>[1] = <a id="164c41" class="tk">rtDW</a>.<a id="164c46" class="tk">DiscreteTransferFcn4_states</a>[0];</td></tr>
+<tr name="165" id="165">
+<td><a id="l165" class='ln'>165</a></td><td>  <a id="165c3" class="tk">rtDW</a>.<a id="165c8" class="tk">DiscreteTransferFcn4_states</a>[0] = <a id="165c41" class="tk">rtb_DiscreteTransferFcn3</a>;</td></tr>
+<tr name="166" id="166">
+<td><a id="l166" class='ln'>166</a></td><td></td></tr>
+<tr name="167" id="167">
+<td><a id="l167" class='ln'>167</a></td><td>  <span class="ct">/* Update for DiscreteTransferFcn: '<a class="ct blk" blk_line="167">&lt;Root&gt;/Reference model</a>' incorporates:</span></td></tr>
+<tr name="168" id="168">
+<td><a id="l168" class='ln'>168</a></td><td><span class="ct">   *  Inport: '<a class="ct blk" blk_line="168">&lt;Root&gt;/In1</a>'</span></td></tr>
+<tr name="169" id="169">
+<td><a id="l169" class='ln'>169</a></td><td><span class="ct">   */</span></td></tr>
+<tr name="170" id="170">
+<td><a id="l170" class='ln'>170</a></td><td>  <a id="170c3" class="tk">rtb_DiscreteTransferFcn3</a> = (<a id="170c31" class="tk">set_point_mras</a> <a id="170c46" class="tk">-</a> <a id="170c48" class="tk">-</a>1.58599173418628 <a id="170c66" class="tk">*</a></td></tr>
+<tr name="171" id="171">
+<td><a id="l171" class='ln'>171</a></td><td>    <a id="171c5" class="tk">rtDW</a>.<a id="171c10" class="tk">Referencemodel_states</a>[0]) <a id="171c36" class="tk">-</a> 0.669633989629328 <a id="171c56" class="tk">*</a></td></tr>
+<tr name="172" id="172">
+<td><a id="l172" class='ln'>172</a></td><td>    <a id="172c5" class="tk">rtDW</a>.<a id="172c10" class="tk">Referencemodel_states</a>[1];</td></tr>
+<tr name="173" id="173">
+<td><a id="l173" class='ln'>173</a></td><td>  <a id="173c3" class="tk">rtDW</a>.<a id="173c8" class="tk">Referencemodel_states</a>[1] = <a id="173c35" class="tk">rtDW</a>.<a id="173c40" class="tk">Referencemodel_states</a>[0];</td></tr>
+<tr name="174" id="174">
+<td><a id="l174" class='ln'>174</a></td><td>  <a id="174c3" class="tk">rtDW</a>.<a id="174c8" class="tk">Referencemodel_states</a>[0] = <a id="174c35" class="tk">rtb_DiscreteTransferFcn3</a>;</td></tr>
+<tr name="175" id="175">
+<td><a id="l175" class='ln'>175</a></td><td><span class="br">}</span></td></tr>
+<tr name="176" id="176">
+<td><a id="l176" class='ln'>176</a></td><td></td></tr>
+<tr name="177" id="177">
+<td><a id="l177" class='ln'>177</a></td><td><span class="ct">/* Model initialize function */</span></td></tr>
+<tr name="178" id="178">
+<td><a id="l178" class='ln'>178</a></td><td><span class="kw">void</span> <a id="178c6" class="tk">Motor_control_initialize</a>(<span class="kw">void</span>)</td></tr>
+<tr name="179" id="179">
+<td><a id="l179" class='ln'>179</a></td><td><span class="br">{</span></td></tr>
+<tr name="180" id="180">
+<td><a id="l180" class='ln'>180</a></td><td>  <span class="ct">/* (no initialization code required) */</span></td></tr>
+<tr name="181" id="181">
+<td><a id="l181" class='ln'>181</a></td><td><span class="br">}</span></td></tr>
+<tr name="182" id="182">
+<td><a id="l182" class='ln'>182</a></td><td></td></tr>
+<tr name="183" id="183">
+<td><a id="l183" class='ln'>183</a></td><td><span class="ct">/*</span></td></tr>
+<tr name="184" id="184">
+<td><a id="l184" class='ln'>184</a></td><td><span class="ct"> * File trailer for generated code.</span></td></tr>
+<tr name="185" id="185">
+<td><a id="l185" class='ln'>185</a></td><td><span class="ct"> *</span></td></tr>
+<tr name="186" id="186">
+<td><a id="l186" class='ln'>186</a></td><td><span class="ct"> * [EOF]</span></td></tr>
+<tr name="187" id="187">
+<td><a id="l187" class='ln'>187</a></td><td><span class="ct"> */</span></td></tr>
+<tr name="188" id="188">
+<td><a id="l188" class='ln'>188</a></td><td></td></tr>
+</table>
+</pre>
+</body>
+</html>
