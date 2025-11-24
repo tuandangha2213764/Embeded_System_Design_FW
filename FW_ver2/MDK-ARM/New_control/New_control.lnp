@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"new_control\startup_stm32f103xb.o"
+"new_control\motor_control.o"
+"new_control\main.o"
+"new_control\stm32f1xx_it.o"
+"new_control\stm32f1xx_hal_msp.o"
+"new_control\stm32f1xx_hal_gpio_ex.o"
+"new_control\stm32f1xx_hal_tim.o"
+"new_control\stm32f1xx_hal_tim_ex.o"
+"new_control\stm32f1xx_hal.o"
+"new_control\stm32f1xx_hal_rcc.o"
+"new_control\stm32f1xx_hal_rcc_ex.o"
+"new_control\stm32f1xx_hal_gpio.o"
+"new_control\stm32f1xx_hal_dma.o"
+"new_control\stm32f1xx_hal_cortex.o"
+"new_control\stm32f1xx_hal_pwr.o"
+"new_control\stm32f1xx_hal_flash.o"
+"new_control\stm32f1xx_hal_flash_ex.o"
+"new_control\stm32f1xx_hal_exti.o"
+"new_control\stm32f1xx_hal_uart.o"
+"new_control\system_stm32f1xx.o"
+--strict --scatter "New_control\New_control.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "New_control.map" -o New_control\New_control.axf
