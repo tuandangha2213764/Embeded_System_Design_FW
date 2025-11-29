@@ -1,0 +1,196 @@
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\Motor_control.exe.config
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\obj\Debug\Motor_control.csprojResolveAssemblyReference.cache
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\obj\Debug\Motor_control.Form1.resources
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.Cache
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\Motor_control.exe
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\Motor_control.pdb
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\ZedGraph.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\ZedGraph.xml
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\obj\Debug\Motor_control.exe
+G:\SCHOOL\DLMT\app\C_sharp\Motor_control\Motor_control\obj\Debug\Motor_control.pdb
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\Motor_control.exe.config
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.exe
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.pdb
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\Motor_control.exe
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\Motor_control.pdb
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\ZedGraph.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\ZedGraph.xml
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.csprojResolveAssemblyReference.cache
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.Form1.resources
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.Cache
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\Motor_control.exe.config
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\obj\Debug\Motor_control.exe
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\obj\Debug\Motor_control.pdb
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\Motor_control.exe
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\Motor_control.pdb
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\ZedGraph.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\ZedGraph.xml
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\obj\Debug\Motor_control.csprojResolveAssemblyReference.cache
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\obj\Debug\Motor_control.Form1.resources
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+G:\SCHOOL\LTDKNC\hpmr\Motor_control_GUI_2\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe.config
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.exe
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.pdb
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.pdb
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\ZedGraph.xml
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Form1.resources
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe.config
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.exe
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.pdb
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.pdb
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\ZedGraph.xml
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Form1.resources
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+C:\Users\DELL\Desktop\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.Cache
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe.config
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.pdb
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\ZedGraph.xml
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.AssemblyReference.cache
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.exe.config
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Form1.resources
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.cache
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.CoreCompileInputs.cache
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_co.E4905EA5.Up2Date
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.exe
+E:\TeraBoxDownload\Ly thuyet dieu khien nang cao\PI_MRAS\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.pdb
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe.config
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.exe
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\Motor_control.pdb
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\ZedGraph.xml
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.AssemblyReference.cache
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.exe.config
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Form1.resources
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.cache
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.csproj.CoreCompileInputs.cache
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_co.E4905EA5.Up2Date
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.exe
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI_3\Motor_control\obj\Debug\Motor_control.pdb
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\Motor_control.exe.config
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\Motor_control.exe
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\Motor_control.pdb
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\ZedGraph.xml
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\de\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\es\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\fr\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\hu\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\it\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\ja\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\pt\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\ru\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\sk\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\sv\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\tr\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.csproj.AssemblyReference.cache
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.exe.config
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.Form1.resources
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.Properties.Resources.resources
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.csproj.GenerateResource.cache
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.csproj.CoreCompileInputs.cache
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_co.E4905EA5.Up2Date
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.exe
+D:\Self-Development\Studying\HK-251\Embeded_System_Design\repo\Embeded_System_Design_FW\Motor_control_GUI\Motor_control\obj\Debug\Motor_control.pdb

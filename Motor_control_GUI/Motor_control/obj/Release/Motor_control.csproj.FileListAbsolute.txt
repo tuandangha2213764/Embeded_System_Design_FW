@@ -1,5 +1,0 @@
-C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\bin\Release\Motor_control.exe.config
-C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Release\Motor_control.csprojResolveAssemblyReference.cache
-C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Release\Motor_control.Form1.resources
-C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Release\Motor_control.Properties.Resources.resources
-C:\Users\DELL\Desktop\Motor_control_GUI_3\Motor_control\obj\Release\Motor_control.csproj.GenerateResource.Cache
